@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>WeUI</title>
+        
+
+        <link rel="stylesheet" href="jquery-weui/lib/weui.css">
+		<link rel="stylesheet" href="jquery-weui/css/jquery-weui.css">
+
+
+    </head>
+    <body>
+
+
+		<div class="container">
+		  <a href="javascript:;" id="btnActionSheet" class="weui_btn weui_btn_primary">ActionSheet</a>
+		</div>
+
+	 
+
+
+
+	<script src="jquery-weui/lib/jquery-2.1.4.js"></script>
+	<script src="jquery-weui/js/jquery-weui.js"></script>
+ <script type="text/javascript">
+$(function (){
+    $('#btnActionSheet').on('click', function (){
+        	$.actions({
+			  actions: [{
+			    text: "编辑",
+			    onClick: function() {
+			      //do something
+			    }
+			  },{
+			    text: "删除",
+			    onClick: function() {
+			      //do something
+			    }
+			  }]
+			});
+			        	
+    });
+});
+ </script>
+
+
+
+    </body>
+</html>
